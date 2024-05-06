@@ -17,5 +17,7 @@ Token <- function(){
   user <- do::Replace0(user[names(user) %in% "user"], " ")
   info <- paste0(cpu, user)
   info <- suppressWarnings(digest(info, algo = "md5"))
+  message(paste0("\n       你的Token:  ", info))
+  message("       请将你的Token发送给作者完成授权！\n ")
   return(info)
 }
