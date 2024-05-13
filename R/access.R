@@ -5,8 +5,6 @@
 #' @export
 
 Token <- function(){
-  if (!requireNamespace("digest", quietly = TRUE))install.packages("digest")
-  if (!requireNamespace("do", quietly = TRUE))install.packages("do")
   suppressWarnings(suppressPackageStartupMessages(library(digest)))
   suppressWarnings(suppressPackageStartupMessages(library(do)))
   path <- "C:/Windows/System32/wbem/wmic.exe"
